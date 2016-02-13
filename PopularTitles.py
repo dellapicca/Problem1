@@ -24,7 +24,7 @@ def load_file(path,lis):
 ######################################
 lis=[]
 for file in list_text_files('/home/luis/Desktop/Projects/problem1_data/library_data/checkouts'):
-    load_file(file,lis)
+    load_file(file,lis)  #hacer esta linea de las tres formas que hablamos hoy de usar el output de una funcion, para eso modificar la funcion load_file
     
 checkouts = pd.DataFrame(lis)
 checkouts['period']=checkouts['date'].map(lambda x: pd.Period(x,'M'))
